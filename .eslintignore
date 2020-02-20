@@ -1,0 +1,9 @@
+hint-report
+**/*.json
+.*ignore
+
+# Yarn files
+.yarn/**
+.pnp.js
+pnpify/**
+yarn.lock

@@ -1,0 +1,44 @@
+{
+  "name": "react-app-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "yarn run jest --colors --detectOpenHandles"
+  },
+  "engines": {
+    "node": "13.x"
+  },
+  "dependencies": {
+    "@material-ui/styles": "^4.9.0",
+    "@yarnpkg/pnpify": "^2.0.0-rc.17",
+    "next": "^9.2.1",
+    "prop-types": "15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.4",
+    "babel-eslint": "10.0.3",
+    "babel-plugin-inline-react-svg": "1.1.0",
+    "babel-plugin-module-resolver": "4.0.0",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.2",
+    "enzyme-to-json": "3.4.3",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-import-resolver-babel-module": "5.1.2",
+    "eslint-plugin-import": "2.20.0",
+    "eslint-plugin-jest": "23.6.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.18.0",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "jest": "25.1.0",
+    "jest-junit": "10.0.0",
+    "prettier": "1.19.1"
+  }
+}

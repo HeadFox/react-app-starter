@@ -1,0 +1,25 @@
+# Github configuration (like hooks)
+.github/
+
+# Public directory
+public/
+
+# App build, outpout of build command
+src/.build
+src/.next
+
+# VS Code settings
+.vscode/
+
+
+# JSON files
+**/*.json
+
+# Ignore files
+.*ignore
+
+# Yarn files
+.yarn/**
+.pnp.js
+pnpify/**
+yarn.lock

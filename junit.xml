@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="8" failures="0" time="2.736">
+  <testsuite name="coordsReducer input test" errors="0" failures="0" skipped="0" timestamp="2020-02-18T08:36:38" time="1.684" tests="8">
+    <testcase classname="coordsReducer input test UPDATE_COORDS action" name="coordsReducer input test UPDATE_COORDS action" time="0.004">
+    </testcase>
+    <testcase classname="coordsReducer input test CLEAR_COORDS action" name="coordsReducer input test CLEAR_COORDS action" time="0">
+    </testcase>
+    <testcase classname="coordsReducer input test UPDATE_COORDS action (function Error() { [native code] })" name="coordsReducer input test UPDATE_COORDS action (function Error() { [native code] })" time="0.005">
+    </testcase>
+    <testcase classname="coordsReducer input test UPDATE_COORDS action (function Error() { [native code] })" name="coordsReducer input test UPDATE_COORDS action (function Error() { [native code] })" time="0">
+    </testcase>
+    <testcase classname="coordsReducer input test UPDATE_COORDS action (function Error() { [native code] })" name="coordsReducer input test UPDATE_COORDS action (function Error() { [native code] })" time="0.001">
+    </testcase>
+    <testcase classname="coordsReducer input test UPDATE_COORDS action (function TypeError() { [native code] })" name="coordsReducer input test UPDATE_COORDS action (function TypeError() { [native code] })" time="0.001">
+    </testcase>
+    <testcase classname="coordsReducer input test UPDATE_COORDS action (function TypeError() { [native code] })" name="coordsReducer input test UPDATE_COORDS action (function TypeError() { [native code] })" time="0.001">
+    </testcase>
+    <testcase classname="coordsReducer input test BAD_ACTION action (function Error() { [native code] })" name="coordsReducer input test BAD_ACTION action (function Error() { [native code] })" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>

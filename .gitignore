@@ -1,0 +1,9 @@
+# Yarn zero-install
+.yarn/unplugged
+.yarn/build-state.yml
+
+# Nextjs build
+.next
+
+# Vscode
+.vscode

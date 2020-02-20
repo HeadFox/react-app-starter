@@ -1,0 +1,39 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@components": "./src/components",
+          "@containers": "./src/containers",
+          "@contents": "./src/contents",
+          "@assets": "./src/assets",
+          "@styles": "./src/styles",
+          "@context": "./src/config/context",
+          "@utils": "./src/utils",
+          "@constants": "./src/config/constants"
+        }
+      }
+    ],
+    [
+      "inline-react-svg",
+      {
+        "svgo": {
+          "plugins": [
+            {
+              "removeTitle": true
+            },
+            {
+              "removeAttrs": { "attrs": "(data-name)" }
+            },
+            {
+              "cleanupIDs": true
+            }
+          ]
+        }
+      }
+    ]
+  ]
+}
