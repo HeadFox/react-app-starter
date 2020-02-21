@@ -10,7 +10,7 @@
     "test": "yarn run jest --colors --detectOpenHandles"
   },
   "engines": {
-    "node": "13.x"
+    "node": "12.x"
   },
   "dependencies": {
     "@material-ui/styles": "^4.9.0",
