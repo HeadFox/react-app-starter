@@ -4,17 +4,21 @@
 
 ## Yarn PnP (berry)
 
-The folder `pnpify` allow to use vscode eslint with yarn PnP
+Please install pnpify `yarn add @yarnpkg/pnpify`
 
-Please specifiy this in `.vscode/setttings.json` in the root folder:
+Then run this command:
 
-```json
-{
-  "eslint.nodePath": "pnpify",
-  "eslint.packageManager": "yarn",
-  "prettier.prettierPath": "pnpify/prettier/index.js"
-}
+```bash
+  yarn pnpify --sdk
 ```
+
+After go to VSCode and follow these steps:
+
+1. Press ctrl+shift+p in a TypeScript file
+
+2. Choose "Select TypeScript Version"
+
+3. Pick "Use Workspace Version"
 
 ## How to run the project
 
