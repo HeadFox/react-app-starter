@@ -38,6 +38,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:4.9.10"
       ],
       [
+        "@types/node",
+        "npm:13.13.1"
+      ],
+      [
+        "@types/react",
+        "npm:16.9.34"
+      ],
+      [
         "@yarnpkg/pnpify",
         "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:2.0.0-rc.21"
       ],
@@ -116,6 +124,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [
         "react-dom",
         "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:16.13.1"
+      ],
+      [
+        "typescript",
+        "patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=c79188"
       ]
     ],
     "locationBlacklistData": [
@@ -127,6 +139,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@babel/core", "npm:7.9.0"],
             ["@material-ui/styles", "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:4.9.10"],
+            ["@types/node", "npm:13.13.1"],
+            ["@types/react", "npm:16.9.34"],
             ["@yarnpkg/pnpify", "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:2.0.0-rc.21"],
             ["babel-eslint", "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:10.1.0"],
             ["babel-plugin-inline-react-svg", "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:1.1.0"],
@@ -146,7 +160,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:16.13.1"],
-            ["react-dom", "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:16.13.1"]
+            ["react-dom", "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:16.13.1"],
+            ["typescript", "patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=c79188"]
           ],
           "linkType": "SOFT",
         }]
@@ -2179,7 +2194,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/hash", "npm:0.8.0"],
             ["@material-ui/types", "virtual:80656b121bd59370922417bdf4d4579b992f59c02314150c02da247ce7338eecd8335493fe5e8e93c497ab40f1e7c550b25f8bcab65ff893619c9dd0be0a7447#npm:5.0.1"],
             ["@material-ui/utils", "virtual:80656b121bd59370922417bdf4d4579b992f59c02314150c02da247ce7338eecd8335493fe5e8e93c497ab40f1e7c550b25f8bcab65ff893619c9dd0be0a7447#npm:4.9.6"],
-            ["@types/react", null],
+            ["@types/react", "npm:16.9.34"],
             ["clsx", "npm:1.0.4"],
             ["csstype", "npm:2.6.8"],
             ["hoist-non-react-statics", "npm:3.3.2"],
@@ -2208,7 +2223,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@material-ui-types-virtual-706dded5e6/0/cache/@material-ui-types-npm-5.0.1-6dccf5e9c9-2.zip/node_modules/@material-ui/types/",
           "packageDependencies": [
             ["@material-ui/types", "virtual:80656b121bd59370922417bdf4d4579b992f59c02314150c02da247ce7338eecd8335493fe5e8e93c497ab40f1e7c550b25f8bcab65ff893619c9dd0be0a7447#npm:5.0.1"],
-            ["@types/react", null]
+            ["@types/react", "npm:16.9.34"]
           ],
           "packagePeers": [
             "@types/react"
@@ -2492,11 +2507,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/prop-types", [
+        ["npm:15.7.3", {
+          "packageLocation": "./.yarn/cache/@types-prop-types-npm-15.7.3-084e0015c6-2.zip/node_modules/@types/prop-types/",
+          "packageDependencies": [
+            ["@types/prop-types", "npm:15.7.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/q", [
         ["npm:1.5.2", {
           "packageLocation": "./.yarn/cache/@types-q-npm-1.5.2-a077e9d454-2.zip/node_modules/@types/q/",
           "packageDependencies": [
             ["@types/q", "npm:1.5.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/react", [
+        ["npm:16.9.34", {
+          "packageLocation": "./.yarn/cache/@types-react-npm-16.9.34-09458e7c52-2.zip/node_modules/@types/react/",
+          "packageDependencies": [
+            ["@types/react", "npm:16.9.34"],
+            ["@types/prop-types", "npm:15.7.3"],
+            ["csstype", "npm:2.6.10"]
           ],
           "linkType": "HARD",
         }]
@@ -2918,7 +2953,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["comment-json", "npm:2.4.1"],
             ["cross-spawn", "npm:6.0.5"],
             ["eslint", "npm:6.8.0"],
-            ["typescript", null]
+            ["typescript", "patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=c79188"]
           ],
           "packagePeers": [
             "eslint",
@@ -4990,6 +5025,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["csstype", [
+        ["npm:2.6.10", {
+          "packageLocation": "./.yarn/cache/csstype-npm-2.6.10-2ca7df665c-2.zip/node_modules/csstype/",
+          "packageDependencies": [
+            ["csstype", "npm:2.6.10"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:2.6.8", {
           "packageLocation": "./.yarn/cache/csstype-npm-2.6.8-80323d48fb-2.zip/node_modules/csstype/",
           "packageDependencies": [
@@ -11114,6 +11156,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-app-starter", "workspace:."],
             ["@babel/core", "npm:7.9.0"],
             ["@material-ui/styles", "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:4.9.10"],
+            ["@types/node", "npm:13.13.1"],
+            ["@types/react", "npm:16.9.34"],
             ["@yarnpkg/pnpify", "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:2.0.0-rc.21"],
             ["babel-eslint", "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:10.1.0"],
             ["babel-plugin-inline-react-svg", "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:1.1.0"],
@@ -11133,7 +11177,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:16.13.1"],
-            ["react-dom", "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:16.13.1"]
+            ["react-dom", "virtual:bae8180940ddd592083648e74556de21ec47babc44d9dba950a157309490806ea45740fa30d0c3b430dcc648ccba0e907cf33d9bb4475009acb19b84bdaf0ba8#npm:16.13.1"],
+            ["typescript", "patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=c79188"]
           ],
           "linkType": "SOFT",
         }]
@@ -13193,6 +13238,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["typedarray-to-buffer", "npm:3.1.5"],
             ["is-typedarray", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["typescript", [
+        ["patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=c79188", {
+          "packageLocation": "./.yarn/cache/typescript-patch-50eb28f081-2.zip/node_modules/typescript/",
+          "packageDependencies": [
+            ["typescript", "patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=c79188"]
           ],
           "linkType": "HARD",
         }]
