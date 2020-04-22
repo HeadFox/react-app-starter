@@ -2905,19 +2905,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-module-resolver@npm:4.0.0":
-  version: 4.0.0
-  resolution: "babel-plugin-module-resolver@npm:4.0.0"
-  dependencies:
-    find-babel-config: ^1.2.0
-    glob: ^7.1.6
-    pkg-up: ^3.1.0
-    reselect: ^4.0.0
-    resolve: ^1.13.1
-  checksum: 2/ac50e01ef09f1dc506e250e852dcfb49c0cd0e7e5bf02b3f3d1de7c51ccda8bf34fa63bc9a698c098004a15d91efcc65517397ae90209c9c23b7778b83235ce3
-  languageName: node
-  linkType: hard
-
 "babel-plugin-syntax-jsx@npm:6.18.0":
   version: 6.18.0
   resolution: "babel-plugin-syntax-jsx@npm:6.18.0"
@@ -4847,19 +4834,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-babel-module@npm:5.1.2":
-  version: 5.1.2
-  resolution: "eslint-import-resolver-babel-module@npm:5.1.2"
-  dependencies:
-    pkg-up: ^2.0.0
-    resolve: ^1.10.0
-  peerDependencies:
-    "@babel/core": ^7.0.0-0
-    babel-plugin-module-resolver: ^3.0.0 || ^4.0.0
-  checksum: 2/f15a2bf0ea7c098cd0866bab4e052fafe5d929158658e05df638576eb63844cb5b758f3b1c8752f9a231147f9a5da8f9c34072b5c2c16eef17a9a7f05e8683cf
-  languageName: node
-  linkType: hard
-
 "eslint-import-resolver-node@npm:^0.3.2":
   version: 0.3.3
   resolution: "eslint-import-resolver-node@npm:0.3.3"
@@ -5375,16 +5349,6 @@ __metadata:
   dependencies:
     to-regex-range: ^5.0.1
   checksum: 2/efca43d59b487ad4bc0b2b1cb9e51617c75a7b0159db51fa190c75c3d634ea5fad1ff4750d7c14346add4cd065e3c46e8f99af333edf2b4ec2a424f87e491a85
-  languageName: node
-  linkType: hard
-
-"find-babel-config@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "find-babel-config@npm:1.2.0"
-  dependencies:
-    json5: ^0.5.1
-    path-exists: ^3.0.0
-  checksum: 2/da8fdf080a8ef29e02f4f309b66f89e11406bf0f0e2a559d333903846b28e9f01121739ef8b4a02a19c79284812e10bc9284a4fb4de9b3c85981aa1071251d86
   languageName: node
   linkType: hard
 
@@ -7337,15 +7301,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"json5@npm:^0.5.1":
-  version: 0.5.1
-  resolution: "json5@npm:0.5.1"
-  bin:
-    json5: lib/cli.js
-  checksum: 2/002ce9e56c4159e5a62fc4891dc2fba1fdc077fba417042e9dd54f8c37da80c0274feb5fa4c0acb3efbc8906d5763b4ff292d512269e1951967d530130bd80b8
-  languageName: node
-  linkType: hard
-
 "json5@npm:^1.0.1":
   version: 1.0.1
   resolution: "json5@npm:1.0.1"
@@ -8996,24 +8951,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"pkg-up@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "pkg-up@npm:2.0.0"
-  dependencies:
-    find-up: ^2.1.0
-  checksum: 2/0a8fcbebf0f1aadc7a52c576352a698abef6c389cb00a0847db2d370d05d4c005f855e196d29618b088062f1394711ca6dadd232692ed225511d7e75a198d246
-  languageName: node
-  linkType: hard
-
-"pkg-up@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "pkg-up@npm:3.1.0"
-  dependencies:
-    find-up: ^3.0.0
-  checksum: 2/df82763250b5283c175918f9410f9651afc1750f951249b31c7c49a6918d9faf13a9ef11e9355cbb0d4d5039a5c9d4c7162755b3e6c26235d2e3baea086e4a54
-  languageName: node
-  linkType: hard
-
 "pluralize@npm:^7.0.0":
   version: 7.0.0
   resolution: "pluralize@npm:7.0.0"
@@ -9771,6 +9708,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-app-starter@link:./src::locator=react-app-starter%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "react-app-starter@link:./src::locator=react-app-starter%40workspace%3A."
+  languageName: node
+  linkType: soft
+
 "react-app-starter@workspace:.":
   version: 0.0.0-use.local
   resolution: "react-app-starter@workspace:."
@@ -9782,11 +9725,9 @@ fsevents@^1.2.7:
     "@yarnpkg/pnpify": 2.0.0-rc.21
     babel-eslint: 10.1.0
     babel-plugin-inline-react-svg: 1.1.0
-    babel-plugin-module-resolver: 4.0.0
     eslint: 6.8.0
     eslint-config-airbnb: 18.1.0
     eslint-config-prettier: 6.11.0
-    eslint-import-resolver-babel-module: 5.1.2
     eslint-plugin-import: 2.20.2
     eslint-plugin-jest: 23.8.2
     eslint-plugin-jsx-a11y: 6.2.3
@@ -9798,6 +9739,7 @@ fsevents@^1.2.7:
     prettier: 2.0.5
     prop-types: 15.7.2
     react: ^16.13.1
+    react-app-starter: "link:./src"
     react-dom: ^16.13.1
     typescript: ^3.8.3
   languageName: unknown
@@ -10124,13 +10066,6 @@ fsevents@^1.2.7:
   version: 2.0.0
   resolution: "require-main-filename@npm:2.0.0"
   checksum: 2/8d3633149a7fef67d14613146247137fe1dc4cc969bf2d1adcd40e3c28056de503229f41e78cba5efebad3a223cbfb4215fd220d879148df10c6d9a877099dbd
-  languageName: node
-  linkType: hard
-
-"reselect@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "reselect@npm:4.0.0"
-  checksum: 2/3480930929f673f12962cdde140dce48ea8ba171cd428bb2c7639672e41770bd6b64e935bc0400f47cfa960f617c7ac068c4309527373825d11e27262f08c0a3
   languageName: node
   linkType: hard
 

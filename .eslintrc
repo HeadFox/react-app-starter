@@ -1,64 +1,58 @@
 {
-    "extends": [
-      "airbnb",
-      "prettier",
-      "prettier/react",
-      "plugin:jest/recommended",
-    ],
-    "env": {
-      "browser": true,
-      "node": true
-    },
-    "parser": "babel-eslint",
-    "plugins": ["jest", "react-hooks"],
-    "settings": {
-      "import/resolver": {
-        "babel-module": {}
-      }
-    },
-    "rules": {
-      "jest/no-disabled-tests": "warn",
-      "jest/no-focused-tests": "error",
-      "jest/no-identical-title": "error",
-      "jest/prefer-to-have-length": "warn",
-      "jest/valid-expect": "error",
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
-      "react/jsx-props-no-spreading": "off",
-      "jsx-a11y/anchor-is-valid": [
-        "error",
-        {
-          "components": ["Link"],
-          "specialLink": ["hrefLeft", "hrefRight"],
-          "aspects": ["invalidHref", "preferButton"]
-        }
-      ],
-      "import/no-extraneous-dependencies": [
-        "error",
-        {
-          "devDependencies": ["**/*.test.js", "**/**/*.test.js", "**/*.spec.js"]
-        }
-      ],
-    },
-    "overrides": [
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:jest/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "plugins": ["jest", "react-hooks"],
+  "rules": {
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
       {
-        "files": ["*.test.*"],
-        "rules": {
-          "react/react-in-jsx-scope": "off",
-          "react/jsx-filename-extension": [
-            1,
-            {
-              "extensions": [".js", ".jsx"]
-            }
-          ]
-        },
-        "globals": {
-          "shallow": false,
-          "mount": false,
-          "render": false,
-          "mountWithTheme": false
-        }
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.test.js", "**/**/*.test.js", "**/*.spec.js"]
       }
     ]
-  }
-  
+  },
+  "overrides": [
+    {
+      "files": ["*.test.*"],
+      "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-filename-extension": [
+          1,
+          {
+            "extensions": [".js", ".jsx"]
+          }
+        ]
+      },
+      "globals": {
+        "shallow": false,
+        "mount": false,
+        "render": false,
+        "mountWithTheme": false
+      }
+    }
+  ]
+}

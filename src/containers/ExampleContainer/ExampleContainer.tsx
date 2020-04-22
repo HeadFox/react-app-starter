@@ -3,9 +3,9 @@ import React, { useContext, useState } from 'react';
 import ExampleContext, {
   ExampleDispatchContext,
   exampleActionList,
-} from '@context/ExampleContext';
+} from 'react-app-starter/config/context/ExampleContext';
 
-import ExampleComponent from '@components/ExampleComponent';
+import ExampleComponent from 'react-app-starter/components/ExampleComponent';
 
 const ExampleContainer = () => {
   const { value } = useContext(ExampleContext);
@@ -20,7 +20,7 @@ const ExampleContainer = () => {
         <input
           name="example-input"
           value={exampleState}
-          onChange={e => setExampleState(e.target.value)}
+          // onChange={e => setExampleState(e.target.value)}
         />
         <button
           type="button"

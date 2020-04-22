@@ -1,11 +1,10 @@
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
-import PropTypes from 'prop-types';
 import { ThemeProvider, withStyles } from '@material-ui/styles';
 
-import { ExampleProvider } from '@context/ExampleContext';
-import reset from '@styles/reset';
+import { ExampleProvider } from 'react-app-starter/config/context/ExampleContext';
+import reset from 'react-app-starter/styles/reset';
 
 const styles = {
   '@global': {
@@ -49,14 +48,5 @@ class CustomApp extends App {
     );
   }
 }
-
-App.defaultProps = {
-  pageProps: {},
-};
-
-App.propTypes = {
-  Component: PropTypes.func.isRequired,
-  pageProps: PropTypes.shape({}),
-};
 
 export default withStyles(styles)(CustomApp);

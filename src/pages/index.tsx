@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 
-import ExampleContainer from '@containers/ExampleContainer';
+import ExampleContainer from 'react-app-starter/containers/ExampleContainer';
 
 const styles = ({ palette }) => ({
   home: {
