@@ -1,6 +1,4 @@
 module.exports = {
-  setupFilesAfterEnv: ['<rootDir>enzyme.config.js'],
-  snapshotSerializers: ['enzyme-to-json/serializer'],
   verbose: true,
   // notify: true, FIXME: https://github.com/mikaelbr/node-notifier/issues/301
   testPathIgnorePatterns: [
@@ -11,12 +9,15 @@ module.exports = {
   ],
   collectCoverageFrom: [
     '**/src/**/*.{js,jsx}',
+    '**/src/**/*.{ts,tsx}',
     '**/scripts/**/*.js',
+    '**/scripts/**/*.ts',
     '!**/node_modules/**',
     '!**/.yarn/**',
     '!**/.pnp.js/**',
     '!**/*.test.js',
+    '!**/*.test.ts',
   ],
-  reporters: ['default', 'jest-junit'],
+  reporters: ['default'],
   coverageReporters: ['json'],
 };
