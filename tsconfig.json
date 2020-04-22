@@ -8,7 +8,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": false, // Change this to true on real project
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
