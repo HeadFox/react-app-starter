@@ -10,7 +10,7 @@ import ExampleComponent from 'react-app-starter/components/ExampleComponent';
 const ExampleContainer = () => {
   const { value } = useContext(ExampleContext);
   const exampleDispatch = useContext(ExampleDispatchContext);
-  const [exampleState, setExampleState] = useState();
+  const [exampleState, setExampleState] = useState('');
   return (
     <div>
       <h3>ExampleContainer with ExampleComponent: </h3>
@@ -20,7 +20,7 @@ const ExampleContainer = () => {
         <input
           name="example-input"
           value={exampleState}
-          // onChange={e => setExampleState(e.target.value)}
+          onChange={e => setExampleState(e.target.value)}
         />
         <button
           type="button"
