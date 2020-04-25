@@ -3,14 +3,15 @@ import Document from 'next/document';
 import { ServerStyleSheets } from '@material-ui/styles';
 
 class CustomDocument extends Document {
-  static async getInitialProps(ctx) {
+  static async getInitialProps(ctx: any) {
     // Render app and page and get the context of the page with collected side effects.
     const sheets = new ServerStyleSheets();
     const originalRenderPage = ctx.renderPage;
 
     ctx.renderPage = () =>
       originalRenderPage({
-        enhanceApp: App => props => sheets.collect(<App {...props} />),
+        enhanceApp: (App: React.ComponentType) => (props: object) =>
+          sheets.collect(<App {...props} />),
       });
 
     const initialProps = await Document.getInitialProps(ctx);

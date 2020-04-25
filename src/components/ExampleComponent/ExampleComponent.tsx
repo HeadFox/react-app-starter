@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ExampleComponent = ({ appName }) => (
+const ExampleComponent = ({ appName }: { appName: string }) => (
   <div>ExampleComponent: {appName}</div>
 );
 

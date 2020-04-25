@@ -5,17 +5,12 @@ import { ThemeProvider, withStyles } from '@material-ui/styles';
 
 import { ExampleProvider } from 'react-app-starter/config/context/ExampleContext';
 import reset from 'react-app-starter/styles/reset';
+import theme from 'react-app-starter/styles/theme';
 
 const styles = {
   '@global': {
     ...reset,
     fontFamily: 'Roboto',
-  },
-};
-
-const theme = {
-  palette: {
-    mainColor: '#f5f5f5',
   },
 };
 
@@ -25,7 +20,7 @@ class CustomApp extends App {
     const jssStyles = document.querySelector('#jss-server-side');
 
     if (jssStyles) {
-      jssStyles.parentNode.removeChild(jssStyles);
+      jssStyles.parentNode?.removeChild(jssStyles);
     }
   }
 

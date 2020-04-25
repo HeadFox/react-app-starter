@@ -3,7 +3,9 @@ import { makeStyles } from '@material-ui/styles';
 
 import ExampleContainer from 'react-app-starter/containers/ExampleContainer';
 
-const styles = ({ palette }) => ({
+import { Theme } from 'react-app-starter/styles/theme';
+
+const styles = ({ palette }: Theme) => ({
   home: {
     backgroundColor: palette.mainColor,
   },
