@@ -15,21 +15,21 @@
   "dependencies": {
     "@material-ui/styles": "4.9.10",
     "@yarnpkg/pnpify": "2.0.0-rc.21",
-    "next": "9.3.5",
+    "next": "9.3.6",
     "prop-types": "15.7.2",
     "react": "^16.13.1",
     "react-app-starter": "link:./src",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@babel/core": "7.9.0",
-    "@types/node": "^13.13.1",
-    "@types/react": "^16.9.34",
-    "@typescript-eslint/eslint-plugin": "^2.29.0",
-    "@typescript-eslint/parser": "^2.29.0",
+    "@babel/core": "7.9.6",
+    "@types/node": "13.13.4",
+    "@types/react": "16.9.34",
+    "@typescript-eslint/eslint-plugin": "2.30.0",
+    "@typescript-eslint/parser": "2.30.0",
     "babel-eslint": "10.1.0",
-    "babel-plugin-inline-react-svg": "1.1.0",
-    "eslint": "^6.8.0",
+    "babel-plugin-inline-react-svg": "1.1.1",
+    "eslint": "6.8.0",
     "eslint-config-airbnb": "18.1.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-import": "2.20.2",
@@ -37,7 +37,7 @@
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.19.0",
     "eslint-plugin-react-hooks": "2.5.1",
-    "jest": "25.4.0",
+    "jest": "25.5.2",
     "prettier": "2.0.5",
     "typescript": "^3.8.3"
   }
