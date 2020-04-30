@@ -1,6 +1,9 @@
-import exampleActionList from './exampleActionList';
-
-const exampleReducer = (state, action) => {
+import exampleActionList, { ExampleActionListTypes } from './exampleActionList';
+import { ExampleState } from './exampleInitialState';
+const exampleReducer = (
+  state: ExampleState,
+  action: ExampleActionListTypes,
+) => {
   switch (action.type) {
     case exampleActionList.EXAMPLE_ACTION: {
       const { value } = action.payload;
