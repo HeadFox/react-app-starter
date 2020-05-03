@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/42cb1eec-7ab4-440c-a8e9-8b2428249555/deploy-status)](https://app.netlify.com/sites/kind-shannon-410534/deploys)
 # React app starter
 
 # Informations
