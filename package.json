@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --ext .tsx,.ts src/",
-    "test": "yarn run jest --colors --detectOpenHandles"
+    "test": "yarn run jest --colors --detectOpenHandles",
+    "export": "next build && next export"
   },
   "engines": {
     "node": "12.x"

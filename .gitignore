@@ -6,7 +6,7 @@
 
 # Nextjs build
 .next
-
+out
 # Vscode
 .vscode
 .now
