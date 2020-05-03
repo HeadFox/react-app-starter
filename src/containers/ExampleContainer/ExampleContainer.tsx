@@ -13,7 +13,7 @@ const ExampleContainer = () => {
     <div>
       <h3>ExampleContainer with ExampleComponent: </h3>
       <ExampleComponent appName="ExampleApp" />
-      <h4>ExampleContainer with ExampleContext: {state}</h4>
+      <h4>ExampleContainer with ExampleContext: {state.value}</h4>
       <div>
         <input
           name="example-input"
